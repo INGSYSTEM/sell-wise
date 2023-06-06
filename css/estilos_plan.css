@@ -52,6 +52,105 @@
   margin: 25px 15px;
 }
 
+/* Estilos planes free, premium, plus */
+
+.free{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-humo);
+  padding: 50px;
+}
+
+.contenedor-free{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.formulario {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--color-fondo);
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.formulario input[type="submit"] {
+  background-color: var(--color-fondo);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: var(--color-boton);
+}
+
+/* Estilo para la opción seleccionada */
+select option[selected] {
+  background-color: #f7f7f7;
+}
+
+/* Estilo para la opción al pasar el cursor */
+select option:hover {
+  background-color: var(--color-boton);
+}
+
+/* Estilo para el contenedor del campo de fecha de vencimiento */
+.contenedor-fecha {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para los selectores de mes y año */
+.contenedor-fecha select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+/* Estilo para el separador "/" */
+.contenedor-fecha span {
+  margin: 0 10px;
+}
+
+.contenedor-fecha span i{
+  transform: rotate(250deg);
+  font-size: 15px;
+}
+
+/* responsive */
+
 @media (max-width: 768px) {
   .planes{
     flex-direction: column;

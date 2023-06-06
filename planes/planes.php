@@ -19,7 +19,7 @@
     <div class="menu">
     <ul class="menu">
       <li>
-        <a href="planes/planes.php">Planes <i class="fa-solid fa-angle-down"></i></a>
+        <a href="planes.php">Planes <i class="fa-solid fa-angle-down"></i></a>
         <ul class="submenu">
           <li><a href="plan_free.php">Free</a></li>
           <li><a href="plan_premium.php">Premium</a></li>
@@ -27,7 +27,7 @@
         </ul>
       </li>
       <li>
-        <a href="inicio_sesion/login.php"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+        <a href="../inicio_sesion/login.php"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
       </li>
     </ul>
     </div>
@@ -52,7 +52,7 @@
         </li>
       </ul>
       <div class="boton-compra">
-        <button>Comprar Ahora</button>
+        <button onclick="redireccionarFree()">Comprar Ahora</button>
       </div>
     </div>
     <div class="cuadrados-planes">
