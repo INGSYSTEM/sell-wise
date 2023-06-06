@@ -18,12 +18,6 @@
     <div class="menu">
     <ul class="menu">
       <li>
-        <a href="#">Soluciones <i class="fa-solid fa-angle-down"></i></a>
-        <ul class="submenu">
-          <li><a href="#">Acerca de</a></li>
-        </ul>
-      </li>
-      <li>
         <a href="#">Planes <i class="fa-solid fa-angle-down"></i></a>
         <ul class="submenu">
           <li><a href="#">Free</a></li>
