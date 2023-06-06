@@ -35,6 +35,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
+/* body */
+
+body {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in;
+}
+
 /* cabecera */
 
 header {

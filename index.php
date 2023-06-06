@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="logo">
-      <img src="img/logo_sellwise.png" alt="SellWise">
+      <a href="index.php"><img src="img/logo_sellwise.png" alt="SellWise"></a>
     </div>
     <div class="menu">
     <ul class="menu">
@@ -127,5 +127,6 @@
       <img src="img/cuadrado.png" alt="">
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
