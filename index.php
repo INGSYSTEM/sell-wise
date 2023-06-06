@@ -83,5 +83,39 @@
     </div>
     </div>
   </div>
+  <footer>
+    <div class="primer-contenedor-footer">
+      <div class="contactos">
+        <h1>contactanos <i class="fa-regular fa-circle-down"></i></h1>
+      </div>
+      <div class="contenedor-informacion-contactos">
+        <div class="contenedor-cuadrito-contactos">
+          <p class="titulos-footer">Llamanos a</p>
+        </div>
+        <div class="contenedor-cuadrito-contactos">
+          <p class="titulos-footer">correo</p>
+        </div>
+        <div class="contenedor-cuadrito-contactos">
+          <p class="titulos-footer">siguenos en</p>
+          <div class="redes">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+      <button>¡Prueba Gratis!</button>
+    </div>
+    <div class="segundo-contenedor-footer">
+      <ul>
+        <li><a href="#">Soluciones</a></li>
+        <li><a href="#">Recursos</a></li>
+        <li><a href="#">Atención y soporte</a></li>
+      </ul>
+    </div>
+    <div class="cuadrado">
+      <img src="img/cuadrado.png" alt="">
+    </div>
+  </footer>
 </body>
 </html>
