@@ -19,13 +19,23 @@
     <div class="menu">
     <ul class="menu">
       <li>
-        <a href="planes.php">Planes <i class="fa-solid fa-angle-down"></i></a>
+        <a href="planes.php" class="no-link" id="mobile-link">Planes <i class="fa-solid fa-angle-down"></i></a>
         <ul class="submenu">
           <li><a href="plan_free.php">Free</a></li>
           <li><a href="plan_premium.php">Premium</a></li>
           <li><a href="plan_premium_plus.php">Premium +</a></li>
         </ul>
       </li>
+
+      <script>
+        // Verificar si el dispositivo es móvil y desactivar el enlace
+        if (/Mobi/.test(navigator.userAgent)) {
+          var mobileLink = document.getElementById('mobile-link');
+          mobileLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+          });
+        }
+      </script>
       <li>
         <a href="../inicio_sesion/login.php"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
       </li>

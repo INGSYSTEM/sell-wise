@@ -468,6 +468,10 @@ footer{
   .contactos{
     margin-left: 35px;
   }
+  .no-link {
+    pointer-events: none;
+    cursor: default;
+  }
 }
 
 @media (max-width: 1024px) {
