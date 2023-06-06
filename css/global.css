@@ -251,7 +251,7 @@ button {
   font-family: var(--fuente-kanit);
   padding: 50px;
   height: 400px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio-alterno {
@@ -262,7 +262,7 @@ button {
   font-family: var(--fuente-kanit);
   padding: 50px;
   height: 400px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .titulo-benficio{
