@@ -47,12 +47,17 @@
     <img src="img/aro.png" alt="" class="aro">
   </div>
   <div class="contenedor-2">
-    <img src="img/fondo.png" alt="" class="fondo">
-    <div class="cuadrito">
-      <p>¡Bienvenido a SellWise!</p>
-      <p>Nuestra plataforma integral te ofrece una amplia gama de herramientas para automatizar tus procedimientos comerciales y gestionar eficientemente tu inventario. </p>
+    <div class="contenedor-cuadrito-img">
+      <img src="img/fondo.png" alt="">
+      <div class="cuadrito">
+        <p>¡Bienvenido a SellWise!</p>
+        <br>
+        <p>Nuestra plataforma integral te ofrece una amplia gama de herramientas para automatizar tus procedimientos comerciales y gestionar eficientemente tu inventario. </p>
+      </div>
     </div>
-    <img src="img/facturar.png" alt="" class="facturar">
+    <div class="imagen-facurar">
+      <img src="img/facturar.png" alt="">
+    </div>
   </div>
 </body>
 </html>

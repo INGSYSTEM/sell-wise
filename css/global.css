@@ -57,7 +57,7 @@ header img {
 .menu ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 80px;
 }
 
 .menu li {
@@ -161,35 +161,48 @@ button {
 .contenedor-2 {
   background-color: var(--color-fondo);
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.contenedor-2 .fondo {
-  width: 900px;
-  height: auto;
+.contenedor-cuadrito-img {
+  display: flex;
   position: relative;
+  width: 50%;
 }
 
-.contenedor-2 .facturar {
-  margin-top: 180px;
-  margin-bottom: 180px;
-  margin-right: 260px;
+.contenedor-cuadrito-img img {
+  width: 100%;
 }
 
-.contenedor-2 .cuadrito {
+.contenedor-cuadrito-img .cuadrito {
   position: absolute;
-  width: 700px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  border-radius: 15px 0 0 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  padding: 20px;
   font-family: var(--fuente-kanit);
   font-weight: 900;
   color: var(--color-texto);
   background-color: var(--color-boton);
-  padding: 20px;
   font-size: 20px;
+  border-radius: 15px 0 0 15px;
 }
 
+
+.imagen-facurar{
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-facurar img{
+  width: 50%;
+}
 
 
 /* responsive */
@@ -204,6 +217,9 @@ button {
   .menu{
     font-size: 10px;
   }
+  .menu ul{
+    gap: 40px;
+  }
   .contenedor-1 img{
     width: 300px;
   }
@@ -215,5 +231,10 @@ button {
   }
   .contenido-principal .aro{
     width: 150px;
+  }
+  .contenedor-cuadrito-img .cuadrito{
+    font-size: 10px;
+    width: 180px;
+    transform: translate(-50%, -50%);
   }
 }
