@@ -15,6 +15,6 @@ SellWise es una aplicación de gestión de inventario diseñada para ayudar a la
 
 * VsCode
 
-## Lenguajes de progrmación usados:
+## Lenguajes de programación usados:
 
 * HTML 5
