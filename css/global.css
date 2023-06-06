@@ -80,8 +80,13 @@ header img {
   transition: 0.8s ease;
 }
 
-.menu li a:hover{
+.menu li a i{
+  transform: rotate(180deg);
+}
+
+.menu li a:hover i{
   color: var(--color-boton);
+  transform: rotate(0deg);
 }
 
 .menu .submenu {
@@ -355,6 +360,18 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* adicionales */
+
+.titulo{
+  text-align: center;
+  font-family: var(--fuente-kanit);
+  font-size: 50px;
+  background-color: var(--color-morado);
+  color: var(--color-texto);
+  border-radius: 15px 15px 0 0;
+  margin: 0 15px;
 }
 
 /* responsive */

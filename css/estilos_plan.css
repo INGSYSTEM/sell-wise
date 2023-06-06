@@ -1,0 +1,40 @@
+.planes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  background-color: var(--color-humo);
+  margin: 0 15px;
+}
+
+.cuadrados-planes{
+  background-color: var(--color-boton);
+  width: 450px;
+  padding: 50px;
+  margin: 50px;
+  font-family: var(--fuente-kanit);
+  color: var(--color-texto);
+  border-radius: 15px;
+}
+
+.cuadrados-planes .plan-logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.cuadrados-planes .plan-logo img{
+  width: 50%;
+}
+
+.cuadrados-planes p{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.boton-compra{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}

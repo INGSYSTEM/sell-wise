@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/estilos_plan.css">
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <!-- CDN fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,26 +32,47 @@
     </ul>
     </div>
   </header>
+
+  <h1 class="titulo">Planes</h1>
   <div class="planes">
     <div class="cuadrados-planes">
+      <div class="plan-logo">
+        <img src="../img/gratis.png" alt="">
+      </div>
       <p>Plan Free</p>
       <ul>
         <li></li>
       </ul>
+      <div class="boton-compra">
+        <button>Comprar Ahora</button>
+      </div>
     </div>
     <div class="cuadrados-planes">
+      <div class="plan-logo">
+        <img src="../img/premium.png" alt="">
+      </div>
       <p>Plan Premium</p>
       <ul>
         <li></li>
       </ul>
+      <div class="boton-compra">
+        <button>Comprar Ahora</button>
+      </div>
     </div>
     <div class="cuadrados-planes">
+      <div class="plan-logo">
+        <img src="../img/plus.png" alt="">
+      </div>
       <p>Plan Premium Plus</p>
       <ul>
         <li></li>
       </ul>
+      <div class="boton-compra">
+        <button>Comprar Ahora</button>
+      </div>
     </div>
   </div>
+
   <footer>
     <div class="primer-contenedor-footer">
       <div class="contactos">
