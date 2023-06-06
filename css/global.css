@@ -456,7 +456,101 @@ footer{
   }
 
   .contenedor-cuadrito-contactos{
+    max-width: 300px;
+  }
+  .cuadrado img{
+    width: 50%;
+  }
+  .segundo-contenedor-footer{
+    text-align: center;
+  }
+
+  .contactos{
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
+
+  header img {
+    width: 50px;
+  }
+
+  .menu {
+    font-size: 10px;
+  }
+
+  .menu ul {
+    gap: 40px;
+  }
+
+  .contenedor-1 img {
     width: 300px;
+  }
+
+  .contenedor-1 p {
+    margin: 0 15px;
+  }
+
+  .contenido-principal .estrella {
+    width: 150px;
+  }
+
+  .contenido-principal .aro {
+    width: 150px;
+  }
+
+  .contenedor-cuadrito-img .cuadrito {
+    font-size: 10px;
+    width: 150px;
+    margin: 35px 0;
+  }
+
+  .imagen-facurar img {
+    width: 50%;
+  }
+
+  .beneficios .contenedor-cuadritos-beneficio {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .beneficios .titulo {
+    font-size: 30px;
+    margin: 30px 50px;
+    text-align: center;
+  }
+
+  .titulo-benficio {
+    font-size: 15px;
+  }
+
+  .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio,
+  .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio-alterno {
+    flex: 1;
+    max-width: 700px;
+    border-radius: 15px;
+    background-color: var(--color-morado);
+    color: var(--color-texto);
+    font-family: var(--fuente-kanit);
+    padding: 50px 30px;
+    font-size: 10px;
+  }
+
+  .contenedor-3 .flamita img {
+    width: 100px;
+    height: 800px;
+  }
+
+  footer{
+    padding: 50px 25px;
+  }
+
+  .contenedor-cuadrito-contactos{
+    width: 400px;
   }
   .cuadrado img{
     width: 50%;

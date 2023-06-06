@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   gap: 80px;
   background-color: var(--color-humo);
   margin: 0 15px;
@@ -29,7 +29,7 @@
 }
 
 .cuadrados-planes p{
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 900;
 }
 
@@ -37,4 +37,69 @@
   display: flex;
   justify-content: center;
   margin-top: 25px;
+}
+
+.cuadrados-planes ul {
+  padding-left: 45px;
+  text-align: justify;
+}
+
+.cuadrados-planes ul strong{
+  color: var(--color-fondo);
+}
+
+.cuadrados-planes ul li{
+  margin: 25px 15px;
+}
+
+@media (max-width: 768px) {
+  .planes{
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuadrados-planes{
+    max-width: 300px;
+  }
+  .cuadrados-planes ul{
+    padding-left: 10px;
+  }
+  .cuadrados-planes ul li{
+    font-size: 10px;
+  }
+  .cuadrados-planes ul strong{
+    font-size: 10px;
+  }
+  .cuadrados-planes p{
+    font-size: 15px;
+  }
+  .boton-compra button{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .planes{
+    gap: 10px;
+    justify-content: center;
+  }
+  .cuadrados-planes{
+    width: 560px;
+  }
+  .cuadrados-planes ul{
+    padding-left: 10px;
+  }
+  .cuadrados-planes ul li{
+    font-size: 10px;
+  }
+  .cuadrados-planes ul strong{
+    font-size: 10px;
+  }
+  .cuadrados-planes p{
+    font-size: 15px;
+  }
+  .boton-compra button{
+    font-size: 10px;
+  }
 }

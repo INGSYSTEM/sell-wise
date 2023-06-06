@@ -41,7 +41,15 @@
       </div>
       <p>Plan Free</p>
       <ul>
-        <li></li>
+        <li>
+        <strong>Acceso básico:</strong> Los usuarios gratuitos pueden acceder a funciones básicas de la aplicación que les permiten gestionar su inventario de manera limitada. Esto puede incluir el seguimiento de productos, registros de entradas y salidas, y algunas funcionalidades esenciales.
+        </li>
+        <li>
+          <strong>Bajo costo:</strong> Al ser gratuito, los usuarios pueden utilizar la aplicación sin incurrir en ningún costo adicional, lo que puede ser atractivo para aquellos que tienen presupuestos limitados.
+        </li>
+        <li>
+          <strong>Evaluación inicial:</strong> El nivel gratuito permite a los usuarios probar la aplicación y evaluar su utilidad y eficacia antes de considerar una actualización a niveles premium.
+        </li>
       </ul>
       <div class="boton-compra">
         <button>Comprar Ahora</button>
@@ -53,7 +61,15 @@
       </div>
       <p>Plan Premium</p>
       <ul>
-        <li></li>
+        <li>
+          <strong>Funcionalidades avanzadas:</strong> Los usuarios premium tienen acceso a características adicionales y avanzadas de la aplicación. Esto puede incluir herramientas de análisis de datos, integraciones con otros sistemas empresariales, seguimiento de múltiples ubicaciones de inventario, notificaciones personalizadas, informes detallados, entre otras funcionalidades mejoradas.
+        </li>
+        <li>
+          <strong>Soporte prioritario:</strong> Los usuarios premium generalmente reciben un soporte prioritario, lo que significa que sus consultas y problemas se manejan de manera más rápida y eficiente en comparación con los usuarios gratuitos.
+        </li>
+        <li>
+          <strong>Actualizaciones regulares:</strong> Los usuarios premium suelen recibir actualizaciones periódicas de la aplicación, lo que les permite aprovechar las últimas mejoras y nuevas características que se agregan al sistema.
+        </li>
       </ul>
       <div class="boton-compra">
         <button>Comprar Ahora</button>
@@ -65,7 +81,15 @@
       </div>
       <p>Plan Premium Plus</p>
       <ul>
-        <li></li>
+        <li>
+          <strong>Características exclusivas:</strong> Los usuarios premium plus disfrutan de todas las características y funcionalidades premium, y también tienen acceso a características exclusivas adicionales. Estas características pueden incluir personalizaciones avanzadas, informes más detallados, asesoramiento personalizado de expertos en gestión de inventario, servicios adicionales como capacitación o consultoría, entre otros.
+        </li>
+        <li>
+          <strong>Integración y escalabilidad:</strong> Los usuarios premium plus pueden beneficiarse de integraciones más avanzadas con otros sistemas empresariales, como software de contabilidad, sistemas de gestión de relaciones con clientes (CRM) u otros sistemas relacionados. También pueden contar con opciones de escalabilidad para adaptarse al crecimiento y las necesidades cambiantes de la empresa.
+        </li>
+        <li>
+          <strong>Servicio personalizado:</strong> Los usuarios premium plus generalmente reciben un servicio personalizado y adaptado a sus necesidades específicas. Esto puede incluir asistencia personalizada, consultas individuales, asesoramiento estratégico y otros servicios de valor agregado.
+        </li>
       </ul>
       <div class="boton-compra">
         <button>Comprar Ahora</button>
