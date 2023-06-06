@@ -58,5 +58,30 @@
       <img src="img/facturar.png" alt="">
     </div>
   </div>
+  <div class="contenedor-3">
+    <div class="flamita">
+      <img src="img/flamita.png" alt="">
+    </div>
+    <div class="beneficios">
+      <h1 class="titulo">Benificios</h1>
+      <div class="contenedor-cuadritos-beneficio">
+        <div class="cuadrito-benficio">
+          <p class="titulo-benficio">Vigila tus productos</p>
+          <br>
+          <p>Desde el momento que ingresan a tu inventario hasta cuando se venden.</p>
+        </div>
+        <div class="cuadrito-benficio-alterno">
+          <p class="titulo-benficio">Sigue tus ventas</p>
+          <br>
+          <p>Puedes realizar el seguimiento de tus ventas y aumentar la rentabilidad.</p>
+        </div>
+        <div class="cuadrito-benficio">
+          <p class="titulo-benficio">Simplifica la Administración de tus proveedores y pedidos</p>
+          <br>
+          <p>Puede realizar un seguimiento de ellos, recibir alertas cuando sus suministros se están agotando y realizar pedidos rápidamente.</p>
+        </div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -206,40 +206,137 @@ button {
   margin: 50px 15px;
 }
 
+/* contenedor 03 */
+
+.contenedor-3{
+  background-color: var(--color-barra);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.beneficios .titulo{
+  margin: 50px;
+  font-family: var(--fuente-kanit);
+  color: var(--color-morado);
+  font-size: 58px;
+}
+
+.beneficios .contenedor-cuadritos-beneficio {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  font-size: 15px;
+}
+
+.beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 15px;
+  background-color: var(--color-morado);
+  color: var(--color-texto);
+  font-family: var(--fuente-kanit);
+  padding: 50px;
+  height: 400px;
+  font-size: 15px;
+}
+
+.beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio-alterno {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 15px;
+  background-color: var(--color-boton);
+  color: var(--color-texto);
+  font-family: var(--fuente-kanit);
+  padding: 50px;
+  height: 400px;
+  font-size: 15px;
+}
+
+.titulo-benficio{
+  font-family: var(--fuente-kanit);
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
 
 /* responsive */
 
 @media (max-width: 768px) {
-  header{
+  header {
     justify-content: space-between;
   }
-  header img{
+
+  header img {
     width: 50px;
   }
-  .menu{
+
+  .menu {
     font-size: 10px;
   }
-  .menu ul{
+
+  .menu ul {
     gap: 40px;
   }
-  .contenedor-1 img{
+
+  .contenedor-1 img {
     width: 300px;
   }
-  .contenedor-1 p{
+
+  .contenedor-1 p {
     margin: 0 15px;
   }
-  .contenido-principal .estrella{
+
+  .contenido-principal .estrella {
     width: 150px;
   }
-  .contenido-principal .aro{
+
+  .contenido-principal .aro {
     width: 150px;
   }
-  .contenedor-cuadrito-img .cuadrito{
+
+  .contenedor-cuadrito-img .cuadrito {
     font-size: 10px;
     width: 150px;
     margin: 35px 0;
   }
-  .imagen-facurar img{
+
+  .imagen-facurar img {
     width: 50%;
+  }
+
+  .beneficios .contenedor-cuadritos-beneficio {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .beneficios .titulo {
+    font-size: 30px;
+    margin: 30px 50px;
+  }
+
+  .titulo-benficio {
+    font-size: 15px;
+  }
+
+  .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio,
+  .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio-alterno {
+    flex: 1;
+    max-width: 200px;
+    border-radius: 15px;
+    background-color: var(--color-morado);
+    color: var(--color-texto);
+    font-family: var(--fuente-kanit);
+    padding: 50px 15px;
+    font-size: 10px;
+  }
+
+  .contenedor-3 .flamita img {
+    width: 100px;
+    height: 800px;
   }
 }
