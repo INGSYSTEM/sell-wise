@@ -20,9 +20,7 @@
       <li>
         <a href="#">Soluciones <i class="fa-solid fa-angle-down"></i></a>
         <ul class="submenu">
-          <li><a href="#">Submenú 1</a></li>
-          <li><a href="#">Submenú 2</a></li>
-          <li><a href="#">Submenú 3</a></li>
+          <li><a href="#">Acerca de</a></li>
         </ul>
       </li>
       <li>
@@ -47,6 +45,14 @@
       <button>Comienza Ahora</button>
     </div>
     <img src="img/aro.png" alt="" class="aro">
+  </div>
+  <div class="contenedor-2">
+    <img src="img/fondo.png" alt="" class="fondo">
+    <div class="cuadrito">
+      <p>¡Bienvenido a SellWise!</p>
+      <p>Nuestra plataforma integral te ofrece una amplia gama de herramientas para automatizar tus procedimientos comerciales y gestionar eficientemente tu inventario. </p>
+    </div>
+    <img src="img/facturar.png" alt="" class="facturar">
   </div>
 </body>
 </html>
