@@ -176,6 +176,16 @@ select option:hover {
   .boton-compra button{
     font-size: 10px;
   }
+  .contenedor-free{
+    flex-direction: column;
+  }
+  .imagen-plan{
+    display: flex;
+    justify-content: center;
+  }
+  .imagen-plan img{
+    width: 50%;
+  }
 }
 
 @media (max-width: 1024px) {

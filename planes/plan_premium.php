@@ -36,7 +36,7 @@
   <div class="free">
     <div class="contenedor-free">
       <div class="imagen-plan">
-        <img src="../img/plus.png" alt="">
+        <img src="../img/premium.png" alt="">
       </div>
       <div class="formulario">
         <form action="#" method="post">

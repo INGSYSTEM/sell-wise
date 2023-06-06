@@ -4,5 +4,5 @@ window.addEventListener('load', function() {
 });
 
 function redireccionarFree() {
-  window.location.href = "planes/plan_free.php"; // Reemplaza con la URL de la página a la que deseas redirigir
+  window.location.href = "../planes/plan_free.php"; // Reemplaza con la URL de la página a la que deseas redirigir
 }
