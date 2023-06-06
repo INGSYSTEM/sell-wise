@@ -91,20 +91,30 @@
       <div class="contenedor-informacion-contactos">
         <div class="contenedor-cuadrito-contactos">
           <p class="titulos-footer">Llamanos a</p>
+          <br>
+          <br>
+          <p>+51 xxx xxx xxx</p>
         </div>
         <div class="contenedor-cuadrito-contactos">
           <p class="titulos-footer">correo</p>
+          <br>
+          <br>
+          <p>enterprise@sellwise.com</p>
         </div>
         <div class="contenedor-cuadrito-contactos">
           <p class="titulos-footer">siguenos en</p>
+          <br>
+          <br>
           <div class="redes">
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-square-whatsapp"></i>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            &nbsp;&nbsp;
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            &nbsp;&nbsp;
+            <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
           </div>
         </div>
+        <button>¡Prueba Gratis!</button>
       </div>
-      <button>¡Prueba Gratis!</button>
     </div>
     <div class="segundo-contenedor-footer">
       <ul>

@@ -267,7 +267,87 @@ button {
 
 /* Footer */
 
+footer{
+  background-color: var(--color-fondo);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 80px;
+  color: var(--color-texto);
+  padding: 50px 0;
+  font-family: var(--fuente-kanit);
+}
 
+.contenedor-informacion-contactos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-cuadrito-contactos{
+  background-color: var(--color-boton);
+  border-radius: 15px;
+  margin: 15px;
+  padding: 15px;
+  width: 400px;
+  max-height: 140px;
+}
+
+.titulos-footer{
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.contactos {
+  padding: 15px;
+}
+
+.contactos h1 i{
+  font-size: 17px;
+}
+
+.redes{
+  text-align: right;
+  font-size: 30px;
+}
+
+.redes a{
+  color: var(--color-texto);
+}
+
+.segundo-contenedor-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.segundo-contenedor-footer ul{
+  list-style: none;
+}
+
+.segundo-contenedor-footer ul li{
+  margin: 50px;
+}
+
+.segundo-contenedor-footer ul li a{
+  color: var(--color-texto);
+  text-decoration: none;
+}
+
+.segundo-contenedor-footer ul li a:hover{
+  color: var(--color-boton);
+}
+
+.cuadrado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* responsive */
 
@@ -343,5 +423,23 @@ button {
   .contenedor-3 .flamita img {
     width: 100px;
     height: 800px;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+
+  .contenedor-cuadrito-contactos{
+    width: 300px;
+  }
+  .cuadrado img{
+    width: 50%;
+  }
+  .segundo-contenedor-footer{
+    text-align: center;
+  }
+
+  .contactos{
+    margin-left: 35px;
   }
 }
