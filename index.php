@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/global.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- CDN fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>SellWise</title>
 </head>
 <body>
@@ -14,19 +16,37 @@
       <img src="img/logo_sellwise.png" alt="SellWise">
     </div>
     <div class="menu">
-      <ul>
-        <li><a href="#">Soluciones</a></li>
-        <li><a href="#">Planes</a></li>
-        <li><a href="#">Iniciar Sesión</a></li>
-      </ul>
+    <ul class="menu">
+      <li>
+        <a href="#">Soluciones <i class="fa-solid fa-angle-down"></i></a>
+        <ul class="submenu">
+          <li><a href="#">Submenú 1</a></li>
+          <li><a href="#">Submenú 2</a></li>
+          <li><a href="#">Submenú 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Planes <i class="fa-solid fa-angle-down"></i></a>
+        <ul class="submenu">
+          <li><a href="#">Free</a></li>
+          <li><a href="#">Premium</a></li>
+          <li><a href="#">Premium +</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+      </li>
+    </ul>
     </div>
   </header>
   <div class="contenido-principal">
+    <img src="img/estrella.png" alt="" class="estrella">
     <div class="contenedor-1">
       <img src="img/logo_sellwise.png" alt="SellWise">
       <p class="textos-frases">Optimiza y gestiona tus operaciones comerciales</p>
       <button>Comienza Ahora</button>
     </div>
+    <img src="img/aro.png" alt="" class="aro">
   </div>
 </body>
 </html>
