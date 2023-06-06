@@ -48,7 +48,6 @@
   </div>
   <div class="contenedor-2">
     <div class="contenedor-cuadrito-img">
-      <img src="img/fondo.png" alt="">
       <div class="cuadrito">
         <p>¡Bienvenido a SellWise!</p>
         <br>
