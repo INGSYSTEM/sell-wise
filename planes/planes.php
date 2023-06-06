@@ -43,7 +43,7 @@
     </div>
   </header>
 
-  <h1 class="titulo">Planes</h1>
+  <h1 class="titulo-planes">Planes</h1>
   <div class="planes">
     <div class="cuadrados-planes">
       <div class="plan-logo">
@@ -82,7 +82,7 @@
         </li>
       </ul>
       <div class="boton-compra">
-        <button>Comprar Ahora</button>
+        <button onclick="redireccionarPremium()">Comprar Ahora</button>
       </div>
     </div>
     <div class="cuadrados-planes">
@@ -102,7 +102,7 @@
         </li>
       </ul>
       <div class="boton-compra">
-        <button>Comprar Ahora</button>
+        <button onclick="redireccionarPremiumPlus()">Comprar Ahora</button>
       </div>
     </div>
   </div>

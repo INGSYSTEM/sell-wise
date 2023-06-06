@@ -80,11 +80,11 @@ header img {
   transition: 0.8s ease;
 }
 
-.menu li a i{
+.menu li a .arriba-abajo{
   transform: rotate(180deg);
 }
 
-.menu li a:hover i{
+.menu li a:hover .arriba-abajo{
   color: var(--color-boton);
   transform: rotate(0deg);
 }
@@ -364,7 +364,7 @@ footer{
 
 /* adicionales */
 
-.titulo{
+.titulo-planes{
   text-align: center;
   font-family: var(--fuente-kanit);
   font-size: 50px;
@@ -518,6 +518,9 @@ footer{
   }
 
   .beneficios .contenedor-cuadritos-beneficio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 40px;
   }
@@ -535,7 +538,7 @@ footer{
   .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio,
   .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio-alterno {
     flex: 1;
-    max-width: 700px;
+    width: 100%;
     border-radius: 15px;
     background-color: var(--color-morado);
     color: var(--color-texto);

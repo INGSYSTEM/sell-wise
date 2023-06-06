@@ -18,7 +18,7 @@
     <div class="menu">
     <ul class="menu">
       <li>
-        <a href="planes/planes.php" class="no-link" id="mobile-link">Planes <i class="fa-solid fa-angle-down"></i></a>
+        <a href="planes/planes.php" class="no-link" id="mobile-link">Planes <i class="fa-solid fa-angle-down arriba-abajo"></i></a>
         <ul class="submenu">
           <li><a href="planes/plan_free.php">Free</a></li>
           <li><a href="planes/plan_premium.php">Premium</a></li>
