@@ -24,7 +24,7 @@
   <div class="contenido-principal">
     <div class="contenedor-1">
       <img src="img/logo_sellwise.png" alt="SellWise">
-      <p>Optimiza y gestiona tus operaciones comerciales</p>
+      <p class="textos-cortos">Optimiza y gestiona tus operaciones comerciales</p>
       <button>Comienza Ahora</button>
     </div>
   </div>
