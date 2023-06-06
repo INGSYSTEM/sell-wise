@@ -63,7 +63,7 @@
       <img src="img/flamita.png" alt="">
     </div>
     <div class="beneficios">
-      <h1 class="titulo">Benificios</h1>
+      <h1 class="titulo">Beneficios</h1>
       <div class="contenedor-cuadritos-beneficio">
         <div class="cuadrito-benficio">
           <p class="titulo-benficio">Vigila tus productos</p>

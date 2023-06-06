@@ -216,6 +216,8 @@ button {
   align-items: center;
 }
 
+
+
 .beneficios .titulo{
   margin: 50px;
   font-family: var(--fuente-kanit);
@@ -234,7 +236,6 @@ button {
 }
 
 .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio {
-  flex: 1;
   max-width: 500px;
   border-radius: 15px;
   background-color: var(--color-morado);
@@ -246,7 +247,6 @@ button {
 }
 
 .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio-alterno {
-  flex: 1;
   max-width: 500px;
   border-radius: 15px;
   background-color: var(--color-boton);
@@ -402,6 +402,7 @@ footer{
   .beneficios .titulo {
     font-size: 30px;
     margin: 30px 50px;
+    text-align: center;
   }
 
   .titulo-benficio {
@@ -411,12 +412,12 @@ footer{
   .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio,
   .beneficios .contenedor-cuadritos-beneficio .cuadrito-benficio-alterno {
     flex: 1;
-    max-width: 200px;
+    max-width: 700px;
     border-radius: 15px;
     background-color: var(--color-morado);
     color: var(--color-texto);
     font-family: var(--fuente-kanit);
-    padding: 50px 15px;
+    padding: 50px 30px;
     font-size: 10px;
   }
 
