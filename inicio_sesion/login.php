@@ -1,3 +1,35 @@
+<?php
+// Establecer conexión con la base de datos SQLite
+$db = new SQLite3('../db/base_de_datos.db');
+
+// Verificar si se ha enviado el formulario
+if (isset($_POST['login'])) {
+  // Obtener los valores ingresados por el usuario
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  // Realizar la validación en la base de datos
+  // Aquí debes implementar tu lógica de validación utilizando consultas SQL
+
+  // Ejemplo de consulta SQL para validar los datos ingresados
+  $query = "SELECT * FROM Usuarios WHERE user = '$username' AND password = '$password'";
+  $result = $db->query($query);
+
+  // Verificar si la consulta retorna algún resultado
+  if ($result->fetchArray()) {
+    // La validación es exitosa, redirigir al dashboard
+    header('Location: dashboard.php');
+    exit();
+  } else {
+    // La validación ha fallado, mostrar un mensaje de error o realizar alguna acción adicional
+    echo "Error: Nombre de usuario o contraseña incorrectos.";
+  }
+}
+
+// Cerrar la conexión con la base de datos
+$db->close();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,22 +46,22 @@
   <a href="#" class="btn_regreso" onclick="goBack()"><i class="fa-solid fa-right-from-bracket regresar"></i></a>
   <div class="box">
     <span class="borderLine"></span>
-    <form>
+    <form action="login.php" method="POST">
       <h2>Ingresar</h2>
       <div class="inputBox">
-        <input type="text" required = "required">
+        <input type="text" name="username" required>
         <span>Usuario</span>
         <i></i>
       </div>
       <div class="inputBox">
-        <input type="password" required = "required">
+        <input type="password" name="password" required>
         <span>Contraseña</span>
         <i></i>
       </div>
       <div class="link">
         <a href="#">¿Olvidaste tu contraseña?</a>
       </div>
-      <input type="submit" value="Ingresar">
+      <input type="submit" name="login" value="Ingresar">
     </form>
   </div>
   <script src="../js/main.js"></script>
