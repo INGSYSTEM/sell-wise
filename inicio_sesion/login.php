@@ -28,7 +28,6 @@
       </div>
       <div class="link">
         <a href="#">¿Olvidaste tu contraseña?</a>
-        <a href="resgistrarse.html">Registrarse</a>
       </div>
       <input type="submit" value="Ingresar">
     </form>
