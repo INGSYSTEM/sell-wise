@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-fondo: #06002E;
+  --color-morado: #470077;
+  --color-boton: #725FF0;
+  --color-texto: #fff;
+  --color-barra: ##F1F1F1;
+  --fuente-kanit: 'Kanit', sans-serif;
+  --color-negro: #000;
+  --color-humo: #d6d6d6;
+}
+
+/* scroll */
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-morado);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-boton);
+}
+
+/* body */
+
+body {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in;
+}
