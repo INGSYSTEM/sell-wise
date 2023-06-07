@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
     exit();
   } else {
     // La validación ha fallado, mostrar un mensaje de error o realizar alguna acción adicional
-    echo "Error: Nombre de usuario o contraseña incorrectos.";
+    echo '<script>alert("Error: Nombre de usuario o contraseña incorrectos."); window.close();</script>';
   }
 }
 

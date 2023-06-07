@@ -17,6 +17,7 @@
   --fuente-kanit: 'Kanit', sans-serif;
   --color-negro: #000;
   --color-humo: #d6d6d6;
+  --color-lila-bb: #DBDFEA;
 }
 
 /* scroll */
@@ -40,4 +41,139 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.8s ease-in;
+}
+
+/* diseño del panel */
+
+.principal{
+  display: flex;
+  flex-direction: row;
+}
+
+.principal .panel {
+  background-color: var(--color-humo);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  height: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+.principal .panel .logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.principal .panel .logo img{
+  width: 50%;
+}
+
+.principal .panel ul{
+  list-style: none;
+  text-align: center;
+}
+
+.principal .panel ul li{
+  width: 100%;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.principal .panel ul li:hover{
+  background-color: var(--color-lila-bb);
+  cursor: pointer;
+}
+
+.principal .panel ul li a{
+  text-decoration: none;
+  color: var(--color-boton);
+  font-family: var(--fuente-kanit);
+  font-weight: 900;
+}
+
+.principal .contenido-dashboard{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.principal .contenido-dashboard .menu{
+  background-color: var(--color-lila-bb);
+  padding: 20px;
+  display: flex;
+  justify-content: right;
+}
+
+.principal .contenido-dashboard .menu ul{
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.principal .contenido-dashboard .menu ul li{
+  font-size: 30px;
+}
+
+.principal .contenido-dashboard .menu ul li a{
+  text-decoration: none;
+  color: var(--color-boton);
+}
+
+.engrange-efecto{
+  transition: transform 0.8s ease;
+}
+
+.engrange-efecto:hover{
+  animation-name: rotateAnimationEngranaje;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateAnimationEngranaje {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+.principal .contenido-dashboard .menu ul li .efecto-campana {
+  transition: transform 0.8s ease;
+}
+
+.principal .contenido-dashboard .menu ul li .efecto-campana:hover {
+  animation-name: rotateAnimationCampana;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotateAnimationCampana {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+.contenedor-dashboard .etiqueta{
+  text-align: center;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-kanit);
+  font-weight: 900;
 }
