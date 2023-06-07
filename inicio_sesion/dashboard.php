@@ -28,36 +28,41 @@
         <ul>
           <li><a href="#"><i class="fa-solid fa-bell efecto-campana"></i></a></li>
           <li><a href="#"><i class="fa-solid fa-gear engrange-efecto"></i></a></li>
-          <li>
-            <a href="#">
-              <input type="file" id="uploadInput" style="display: none;">
-              <i class="fa-solid fa-circle-user" onclick="selectImage()"></i>
-            </a>
-          </li>
+          <li><a href="#"><i id="uploadIcon" class="fa-solid fa-circle-user" onclick="selectImage()"></i></a></li>
         </ul>
-      </div>
-
-      <div id="imagePreview"></div>
-
-      <script>
-        function selectImage() {
-          document.getElementById('uploadInput').click();
-        }
-
-        document.getElementById('uploadInput').addEventListener('change', function(event) {
-          var file = event.target.files[0];
-
-          var reader = new FileReader();
-          reader.onload = function(e) {
-            var imagePreview = document.getElementById('imagePreview');
-            imagePreview.innerHTML = '<img src="' + e.target.result + '" alt="Preview">';
-          };
-          reader.readAsDataURL(file);
-        });
-      </script>
+      </div> 
       <div class="contenedor-dashboard">
         <div class="etiqueta">
-          <p>Activaidad de ventas</p>
+          <p>Actividad de ventas</p>
+        </div>
+        <div class="panel-ventas">
+          <div class="columna-1">
+            <div class="grup-1">
+              <div class="cuadrito-ventas">
+                <p>Por empaquetar</p>
+              </div>
+              <div class="cuadrito-ventas">
+                <p>Por enviar</p>
+              </div>
+            </div>
+            <div class="grup-2">
+              <div class="cuadrito-ventas">
+                <p>Por entregar</p>
+              </div>
+              <div class="cuadrito-ventas">
+                <p>Por factuarar</p>
+              </div>
+            </div>
+          </div>
+          <div class="columna-2">
+            <h1>Resumen de inventario</h1>
+            <div class="cuadrito-inventario">
+              <p>Cantidad Disponible</p>
+            </div>
+            <div class="cuadrito-inventario">
+              <p>Cantidad por recibir</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

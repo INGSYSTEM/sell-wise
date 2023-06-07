@@ -18,3 +18,5 @@ function redireccionarPremiumPlus() {
 function goBack() {
   window.history.back();
 }
+
+// para la foto de perfil

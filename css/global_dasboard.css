@@ -53,9 +53,6 @@ body {
 .principal .panel {
   background-color: var(--color-humo);
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 430px;
   height: 100%;
   padding: 50px 0;
   display: flex;
@@ -96,11 +93,9 @@ body {
 }
 
 .principal .contenido-dashboard{
-  position: absolute;
-  top: 0;
+  width: 100%;
   right: 0;
-  display: flex;
-  flex-direction: column;
+  margin-left: 16%;
 }
 
 .principal .contenido-dashboard .menu{
@@ -176,4 +171,57 @@ body {
   color: var(--color-texto);
   font-family: var(--fuente-kanit);
   font-weight: 900;
+}
+
+.panel-ventas{
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  background-color: #ACB1D6;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.columna-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cuadrito-ventas {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.cuadrito-ventas p {
+  text-align: center;
+}
+
+.columna-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.columna-2 h1{
+  font-family: var(--fuente-kanit);
+}
+
+.cuadrito-inventario{
+  width: 300px;
+  height: 100px;
+  background-color: #ccc;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
 }
