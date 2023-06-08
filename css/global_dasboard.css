@@ -8,12 +8,12 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --color-fondo: #06002E;
   --color-morado: #470077;
   --color-boton: #725FF0;
   --color-texto: #fff;
-  --color-barra: ##F1F1F1;
+  --color-barra: #F1F1F1;
   --fuente-kanit: 'Kanit', sans-serif;
   --color-negro: #000;
   --color-humo: #d6d6d6;
@@ -45,9 +45,10 @@ body {
 
 /* diseño del panel */
 
-.principal{
+.principal {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .principal .panel {
@@ -58,74 +59,76 @@ body {
   display: flex;
   flex-direction: column;
 }
-.principal .panel .logo{
+
+.principal .panel .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
 }
-.principal .panel .logo img{
+
+.principal .panel .logo img {
   width: 50%;
 }
 
-.principal .panel ul{
+.principal .panel ul {
   list-style: none;
   text-align: center;
 }
 
-.principal .panel ul li{
+.principal .panel ul li {
   width: 100%;
   padding: 20px;
   text-transform: uppercase;
 }
 
-.principal .panel ul li:hover{
+.principal .panel ul li:hover {
   background-color: var(--color-lila-bb);
   cursor: pointer;
 }
 
-.principal .panel ul li a{
+.principal .panel ul li a {
   text-decoration: none;
   color: var(--color-boton);
   font-family: var(--fuente-kanit);
   font-weight: 900;
 }
 
-.principal .contenido-dashboard{
+.principal .contenido-dashboard {
   width: 100%;
   right: 0;
   margin-left: 16%;
 }
 
-.principal .contenido-dashboard .menu{
+.principal .contenido-dashboard .menu {
   background-color: var(--color-lila-bb);
   padding: 20px;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 }
 
-.principal .contenido-dashboard .menu ul{
+.principal .contenido-dashboard .menu ul {
   list-style: none;
   gap: 20px;
   display: flex;
   flex-direction: row;
 }
 
-.principal .contenido-dashboard .menu ul li{
+.principal .contenido-dashboard .menu ul li {
   font-size: 30px;
 }
 
-.principal .contenido-dashboard .menu ul li a{
+.principal .contenido-dashboard .menu ul li a {
   text-decoration: none;
   color: var(--color-boton);
 }
 
-.engrange-efecto{
+.engrange-efecto {
   transition: transform 0.8s ease;
 }
 
-.engrange-efecto:hover{
+.engrange-efecto:hover {
   animation-name: rotateAnimationEngranaje;
   animation-duration: 0.8s;
   animation-timing-function: ease;
@@ -165,7 +168,7 @@ body {
   }
 }
 
-.contenedor-dashboard .etiqueta{
+.contenedor-dashboard .etiqueta {
   text-align: center;
   background-color: var(--color-fondo);
   color: var(--color-texto);
@@ -173,7 +176,7 @@ body {
   font-weight: 900;
 }
 
-.panel-ventas{
+.panel-ventas {
   padding: 50px;
   display: flex;
   flex-direction: row;
@@ -204,18 +207,18 @@ body {
   text-align: center;
 }
 
-.columna-2{
+.columna-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.columna-2 h1{
+.columna-2 h1 {
   font-family: var(--fuente-kanit);
 }
 
-.cuadrito-inventario{
+.cuadrito-inventario {
   width: 300px;
   height: 100px;
   background-color: #ccc;
@@ -224,4 +227,161 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+  position: relative;
+  width: 96.8%;
+  margin-left: 3.2%;
+}
+
+.menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 90%;
+  background-color: var(--color-texto);
+  width: 10%;
+  border-radius: 0 15px;
+  font-family: var(--fuente-kanit);
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.menu .submenu li {
+  padding: 10px;
+  width: 100%;
+  transition: 0.8s ease;
+  text-align: center;
+}
+
+.menu .submenu li a{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.menu .submenu li:hover {
+  background-color: var(--color-humo);
+  border-radius: 0 15px;
+}
+
+.menu li:not(:hover) > .submenu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .principal .panel {
+    width: 20%;
+  }
+
+  .principal .panel ul li a {
+    font-size: 10px;
+  }
+
+  .menu {
+    display: block;
+    width: 80%;
+    margin-left: 3.2%;
+  }
+
+  .contenedor-dashboard .etiqueta {
+    font-size: 10px;
+  }
+
+  .panel-ventas {
+    gap: 10px;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cuadrito-ventas {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cuadrito-ventas p {
+    font-size: 10px;
+  }
+
+  .columna-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .columna-2 h1 {
+    font-size: 15px;
+  }
+
+  .cuadrito-inventario {
+    width: 150px;
+    height: 50px;
+  }
+
+  .etiqueta {
+    width: 83%;
+  }
+
+  .grup-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grup-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Estilos para el menú desplegable en dispositivos móviles */
+  .menu .submenu {
+    display: none;
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+    background-color: var(--color-texto);
+    width: 100%;
+    z-index: 2;
+    border-radius: 0 15px;
+    font-family: var(--fuente-kanit);
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.2s;
+  }
+
+  .menu li:hover > .submenu {
+    display: block;
+    opacity: 1;
+  }
+
+  .menu .submenu li {
+    padding: 10px;
+    width: 100%;
+    transition: 0.8s ease;
+    text-align: center;
+  }
+
+  .menu .submenu li a {
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-boton);
+  }
+
+  .menu .submenu li:hover {
+    background-color: var(--color-humo);
+    border-radius: 0 15px;
+  }
+
+  .menu li:not(:hover) > .submenu {
+    display: none;
+    opacity: 0;
+  }
 }

@@ -28,9 +28,17 @@
         <ul>
           <li><a href="#"><i class="fa-solid fa-bell efecto-campana"></i></a></li>
           <li><a href="#"><i class="fa-solid fa-gear engrange-efecto"></i></a></li>
-          <li><a href="#"><i id="uploadIcon" class="fa-solid fa-circle-user" onclick="selectImage()"></i></a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+            <ul class="submenu">
+              <li><a href="#">configuraciones</a></li>
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Terminos y condiciones</a></li>
+            </ul>
+          </li>
         </ul>
-      </div> 
+      </div>
+
       <div class="contenedor-dashboard">
         <div class="etiqueta">
           <p>Actividad de ventas</p>
