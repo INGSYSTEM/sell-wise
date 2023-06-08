@@ -118,7 +118,7 @@
             <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
           </div>
         </div>
-        <button onclick="redireccionarFree()">¡Prueba Gratis!</button>
+        <button onclick="redireccionarGratis()">¡Prueba Gratis!</button>
       </div>
     </div>
     <div class="segundo-contenedor-footer">
