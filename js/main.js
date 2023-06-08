@@ -15,6 +15,10 @@ function redireccionarPremiumPlus() {
   window.location.href = "../planes/plan_premium_plus.php"; // Reemplaza con la URL de la página a la que deseas redirigir
 }
 
+function redireccionarPlanes() {
+  window.location.href = "../planes/planes.php"; // Reemplaza con la URL de la página a la que deseas redirigir
+}
+
 function goBack() {
   window.history.back();
 }

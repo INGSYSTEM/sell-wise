@@ -1,3 +1,47 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // Establecer conexión con la base de datos
+  $db = new SQLite3('../db/base_de_datos.db');
+
+  // Obtener los valores ingresados por el usuario
+  $nombre = $_POST['nombre'] ?? '';
+  $apellido = $_POST['apellido'] ?? '';
+  $usuario = $_POST['user'] ?? '';
+  $password = $_POST['password'] ?? '';
+
+  // Validar campos obligatorios
+  if (!empty($nombre) && !empty($apellido) && !empty($usuario) && !empty($password)) {
+      // Valor predeterminado para la columna "servicio"
+      $servicio = "Free";
+
+      // Verificar si el usuario ya existe en la tabla
+      $query_check = "SELECT COUNT(*) FROM Usuarios WHERE user = '$usuario'";
+      $result_check = $db->querySingle($query_check);
+      if ($result_check > 0) {
+          // El usuario ya existe, mostrar advertencia emergente
+          echo "<script>alert('El usuario ya existe. Por favor, elija otro usuario.');</script>";
+      } else {
+          // Insertar los datos en la base de datos
+          $query_insert = "INSERT INTO Usuarios (user, password, nombre, apellido, servicio) VALUES ('$usuario', '$password', '$nombre', '$apellido', '$servicio')";
+          $db->exec($query_insert);
+
+          // Cerrar la conexión con la base de datos
+          $db->close();
+
+          // Redirigir al usuario a una nueva página de éxito
+
+          header('Location: ../index.php');
+          exit;
+      }
+  } else {
+      // Mostrar alerta emergente en caso de campos vacíos
+      echo "<script>alert('Error: Por favor, complete todos los campos obligatorios');</script>";
+  }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -49,60 +93,21 @@
         <img src="../img/gratis.png" alt="">
       </div>
       <div class="formulario">
-        <form action="#" method="post">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          
-          <label for="tarjeta">Número de Tarjeta:</label>
-          <input type="text" id="tarjeta" name="tarjeta" required>
-          
-          <label for="vencimiento">Fecha de Vencimiento:</label>
-          <div class="contenedor-fecha">
-            <select id="mes" name="mes" required>
-              <option value="">Mes</option>
-              <option value="01">Enero</option>
-              <option value="02">Febrero</option>
-              <option value="03">Marzo</option>
-              <option value="04">Abril</option>
-              <option value="05">Mayo</option>
-              <option value="06">Junio</option>
-              <option value="07">Julio</option>
-              <option value="08">Agosto</option>
-              <option value="09">Septiembre</option>
-              <option value="10">Octubre</option>
-              <option value="11">Noviembre</option>
-              <option value="12">Diciembre</option>
-              <!-- Agrega más opciones para los meses restantes -->
-            </select>
+      <form action="plan_free.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-            <span><i class="fa-solid fa-slash"></i></span>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
 
-            <select id="anio" name="anio" required>
-              <option value="">Año</option>
-              <option value="2022">2022</option>
-              <option value="2023">2023</option>
-              <option value="2024">2024</option>
-              <option value="2025">2025</option>
-              <option value="2026">2026</option>
-              <option value="2027">2027</option>
-              <option value="2028">2028</option>
-              <option value="2029">2029</option>
-              <option value="2030">2030</option>
-              <option value="2031">2031</option>
-              <option value="2032">2032</option>
-              <option value="2033">2033</option>
-              <!-- Agrega más opciones para los años futuros -->
-            </select>
-          </div>
-          
-          <label for="cvv">CVV (3 caracteres):</label>
-          <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" title="Debe tener 3 dígitos" required>
-          
-          <input type="submit" value="Pagar">
-        </form>
+        <label for="user">Nombre de usuario:</label>
+        <input type="text" id="user" name="user" required autocomplete="off">
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required autocomplete="off">
+
+        <input type="submit" value="Registrarse">
+      </form>
       </div>
     </div>
   </div>

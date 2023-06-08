@@ -89,6 +89,7 @@
 
 .formulario input[type="text"],
 .formulario input[type="email"],
+.formulario input[type="password"],
 .formulario input[type="number"],
 .formulario select {
   width: 100%;

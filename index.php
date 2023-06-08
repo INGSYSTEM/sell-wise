@@ -47,7 +47,7 @@
     <div class="contenedor-1">
       <img src="img/logo_sellwise.png" alt="SellWise">
       <p class="textos-frases">Optimiza y gestiona tus operaciones comerciales</p>
-      <button>Comienza Ahora</button>
+      <button onclick="redireccionarPlanes()">Comienza Ahora</button>
     </div>
     <img src="img/aro.png" alt="" class="aro">
   </div>
@@ -118,7 +118,7 @@
             <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
           </div>
         </div>
-        <button>¡Prueba Gratis!</button>
+        <button onclick="redireccionarFree()">¡Prueba Gratis!</button>
       </div>
     </div>
     <div class="segundo-contenedor-footer">
