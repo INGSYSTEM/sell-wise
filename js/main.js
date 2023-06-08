@@ -24,7 +24,7 @@ function redireccionarGratis() {
 }
 
 function redireccionarGratisSeccionPlanes() {
-  window.location.href = "plan_free.php"; // Reemplaza con la URL de la página a la que deseas redirigir
+  window.location.href = "../planes/plan_free.php"; // Reemplaza con la URL de la página a la que deseas redirigir
 }
 
 function goBack() {
