@@ -11,64 +11,123 @@
   <title>SellWise</title>
 </head>
 <body>
-  <div class="principal">
-    <div class="panel">
-      <div class="logo">
-        <img src="../img/logo_sellwise.png" alt="">
-      </div>
-      <ul>
-        <li><a href="#"><i class="fa-solid fa-house-laptop"></i> Panel de control</a></li>
-        <li><a href="#"><i class="fa-solid fa-file-invoice"></i> Informe</a></li>
-        <li><a href="#"><i class="fa-solid fa-file-invoice-dollar"></i> Facturas</a></li>
-        <li><a href="#"><i class="fa-solid fa-truck-field"></i> Facturas provedor</a></li>
-      </ul>
+  <div class="menu-lateral">
+    <div class="logo">
+      <img src="../img/logo_sellwise.png" alt="Logo de la página">
     </div>
-    <div class="contenido-dashboard">
+    <ul>
+      <li><a href="#">
+        <i class="fa-solid fa-table-columns"></i>&nbsp;&nbsp;<span>Panel de control</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-chart-simple"></i>&nbsp;&nbsp;<span>Informe</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-newspaper"></i>&nbsp;&nbsp;<span>Facturas</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-file-invoice"></i>&nbsp;&nbsp;<span>Facturas del proveedor</span></a>
+      </li>
+    </ul>
+  </div>
+  <div class="contenedor">
+    <div class="cabecera">
       <div class="menu">
-        <ul>
-          <li><a href="#"><i class="fa-solid fa-bell efecto-campana"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-gear engrange-efecto"></i></a></li>
-          <li>
-            <a href="#"><i class="fa-solid fa-circle-user"></i></a>
-            <ul class="submenu">
-              <li><a href="#">configuraciones</a></li>
-              <li><a href="#">Acerca de</a></li>
-              <li><a href="#">Terminos y condiciones</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="contenedor-dashboard">
-        <div class="etiqueta">
-          <p>Actividad de ventas</p>
+        <div class="buscador">
+          <input type="text" placeholder="Buscar">
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <div class="panel-ventas">
-          <div class="columna-1">
-            <div class="grup-1">
-              <div class="cuadrito-ventas">
-                <p>Por empaquetar</p>
+        <div class="usuario">
+          <a href="#" class="boton">
+            <i class="fa-solid fa-bell"></i>&nbsp;&nbsp;
+          </a>
+          <a href="#" class="boton">
+            <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;
+          </a>
+          <a href="#" class="boton">
+            <i class="fa-solid fa-circle-user"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="contenido">
+      <!-- Primera sección -->
+      <div class="titulos">
+        <h1>Actividad ventas</h1>
+      </div>
+      <div class="actividad-ventas">
+        <div class="columna">
+          <div class="tarjetas-contenido">
+            <div class="tarjeta">
+              <p><i class="fa-solid fa-box-open"></i> Por empequetar</p>
+            </div>
+            <div class="tarjeta">
+              <p><i class="fa-solid fa-paper-plane"></i> Por enviar</p>
+            </div>
+          </div>
+          <div class="tarjetas-contenido">
+            <div class="tarjeta">
+              <p><i class="fa-solid fa-truck-fast"></i> Por entregar</p>
+            </div>
+            <div class="tarjeta">
+              <p><i class="fa-solid fa-file-invoice"></i> Por facturar</p>
+            </div>
+          </div>
+        </div>
+        <div class="columna">
+          <h1>Resumen de inventario</h1>
+          <div class="tarjeta">
+            <p>Cantidad disponible</p>
+          </div>
+          <div class="tarjeta">
+              <p>Cantidad por recibir</p>
+          </div>
+        </div>
+      </div>
+      <!-- Segunda sección -->
+      <div class="detalles-articulos">
+        <h1>Detalles producto y artículos vendidos</h1>
+        <div class="detalles-producto">
+          <div class="tabla">
+            <div class="filas">
+              <p><i class="fa-solid fa-arrow-down"></i> Artículos con exitencia bajas</p>
+            </div>
+            <div class="filas">
+              <p><i class="fa-solid fa-globe"></i> Todos los articulos</p>
+            </div>
+            <div class="filas">
+              <p><i class="fa-solid fa-hourglass-start"></i> Artículos sin confirmar</p>
+            </div>
+          </div>
+          <div class="orden-fecha">
+            <div class="titulos-columnas">
+              <div class="titulo">
+                <p>Orden Compras</p>
               </div>
-              <div class="cuadrito-ventas">
-                <p>Por enviar</p>
+              <div class="titulo">
+                <p>Coste total</p>
               </div>
             </div>
-            <div class="grup-2">
-              <div class="cuadrito-ventas">
-                <p>Por entregar</p>
+            <div class="tarjetas-columnas">
+              <div class="tarjeta">
+                <p>Cantidad pedida</p>
               </div>
-              <div class="cuadrito-ventas">
-                <p>Por factuarar</p>
+              <div class="tarjeta">
+                <p>Coste total</p>
               </div>
             </div>
           </div>
-          <div class="columna-2">
-            <h1>Resumen de inventario</h1>
-            <div class="cuadrito-inventario">
-              <p>Cantidad Disponible</p>
+          <div class="articulo-ventas">
+            <div class="tarjeta">
+                
             </div>
-            <div class="cuadrito-inventario">
-              <p>Cantidad por recibir</p>
+            <div class="tarjeta">
+              
+            </div>
+            <div class="tarjeta">
+                
             </div>
           </div>
         </div>
