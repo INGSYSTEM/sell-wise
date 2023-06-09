@@ -28,6 +28,9 @@
       <li>
         <a href="#"><i class="fa-solid fa-file-invoice"></i>&nbsp;&nbsp;<span>Facturas del proveedor</span></a>
       </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-right-from-bracket" style="transform: rotate(180deg);"></i>&nbsp;&nbsp;<span>Cerrar Sesión</span></a>
+      </li>
     </ul>
   </div>
   <div class="contenedor">

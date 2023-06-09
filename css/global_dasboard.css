@@ -324,9 +324,9 @@ li{
   }
 
   .contenedor .cabecera{
-    width: 83vw;
+    width: 84vw;
     top: 0;
-    left: 8.3vh;
+    left: 7.8vh;
     height: 8vh;
     z-index: 1;
   }
@@ -376,14 +376,15 @@ li{
 
   .contenedor .contenido .detalles-articulos .detalles-producto .tabla .filas{
     width: 80px;
+    height: 150px;
     font-size: 10px;
   }
 
   .contenedor .contenido .detalles-articulos .orden-fecha{
     width: 200px;
-    height: 100px;
+    height: 200px;
     font-size: 10px;
-    gap: 5PX;
+    gap: 80PX;
   }
 
   .contenedor .contenido .detalles-articulos .orden-fecha .titulos-columnas {
@@ -398,7 +399,113 @@ li{
 
   .contenedor .contenido .detalles-articulos .articulo-ventas .tarjeta{
     width: 75px;
-    height: 10px;
+    height: 100px;
     font-size: 10px;
   }
 }
+
+/* @media (max-width: 1024px) {
+  .menu-lateral li a span {
+    display: none;
+  }
+  .menu-lateral {
+    align-items: center;
+    width: 10vh;
+  }
+  .menu-lateral .logo {
+    padding: 5px;
+  }
+  .menu-lateral .logo img {
+    width: 75%;
+  }
+
+  .contenedor .contenido .titulos {
+    font-size: 10px;
+  }
+
+  .contenedor .cabecera .menu .usuario .boton {
+    font-size: 20px;
+  }
+
+  .contenedor .cabecera {
+    width: 84vw;
+    top: 0;
+    left: 7.8vh;
+    height: 8vh;
+    z-index: 1;
+  }
+
+  .contenedor .cabecera .menu .usuario {
+    flex: 2;
+    text-align: right;
+  }
+
+  .contenedor .contenido {
+    margin-top: 8vh;
+    z-index: 0;
+  }
+
+  .contenedor .contenido .actividad-ventas {
+    gap: 3px;
+  }
+
+  .contenedor .contenido .actividad-ventas .columna .tarjetas-contenido {
+    gap: 3px;
+  }
+  .contenedor .contenido .actividad-ventas .columna .tarjetas-contenido .tarjeta {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+  .contenedor .contenido .actividad-ventas .columna h1 {
+    font-size: 35px;
+  }
+  .contenedor .contenido .actividad-ventas .columna .tarjeta {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+  .contenedor .contenido .detalles-articulos h1 {
+    font-size: 35px;
+  }
+
+  .contenedor .contenido .detalles-articulos .detalles-producto {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .contenedor .contenido .detalles-articulos .detalles-producto .tabla {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  .contenedor .contenido .detalles-articulos .detalles-producto .tabla .filas {
+    width: 180px;
+    height: 150px;
+    font-size: 20px;
+  }
+
+  .contenedor .contenido .detalles-articulos .orden-fecha {
+    width: 500px;
+    height: 200px;
+    font-size: 20px;
+    gap: 80PX;
+  }
+
+  .contenedor .contenido .detalles-articulos .orden-fecha .titulos-columnas {
+    gap: 80px;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .contenedor .contenido .detalles-articulos .articulo-ventas {
+    gap: 3px;
+  }
+
+  .contenedor .contenido .detalles-articulos .articulo-ventas .tarjeta {
+    width: 150px;
+    height: 100px;
+    font-size: 100px;
+  }
+} */
