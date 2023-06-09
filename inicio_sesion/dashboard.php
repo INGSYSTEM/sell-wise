@@ -1,3 +1,15 @@
+<?php
+// Verificar el estado de inicio de sesión
+session_start();
+$isLoggedIn = isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn'] === true;
+
+// Redirigir al formulario de inicio de sesión si no ha iniciado sesión
+if (!$isLoggedIn) {
+  header('Location: login.php'); // Reemplaza "login.php" con la ruta de tu formulario de inicio de sesión
+  exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -29,7 +41,7 @@
         <a href="#"><i class="fa-solid fa-file-invoice"></i>&nbsp;&nbsp;<span>Facturas del proveedor</span></a>
       </li>
       <li>
-        <a href="#"><i class="fa-solid fa-right-from-bracket" style="transform: rotate(180deg);"></i>&nbsp;&nbsp;<span>Cerrar Sesión</span></a>
+        <a href="logout.php"><i class="fa-solid fa-right-from-bracket" style="transform: rotate(180deg);"></i>&nbsp;&nbsp;<span>Cerrar Sesión</span></a>
       </li>
     </ul>
   </div>

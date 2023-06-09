@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // Establecer conexión con la base de datos SQLite
 $db = new SQLite3('../db/base_de_datos.db');
 
@@ -17,18 +19,19 @@ if (isset($_POST['login'])) {
 
   // Verificar si la consulta retorna algún resultado
   if ($result->fetchArray()) {
-    // La validación es exitosa, redirigir al dashboard
+    // La validación es exitosa, establecer variable de sesión
+    $_SESSION['isLoggedIn'] = true;
+
+    // Redirigir al usuario al dashboard u otra página protegida
     header('Location: dashboard.php');
     exit();
   } else {
     // La validación ha fallado, mostrar un mensaje de error o realizar alguna acción adicional
-    echo '<script>alert("Error: Nombre de usuario o contraseña incorrectos."); window.close();</script>';
+    $error = 'Nombre de usuario o contraseña incorrectos.';
   }
 }
-
-// Cerrar la conexión con la base de datos
-$db->close();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
