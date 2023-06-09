@@ -312,7 +312,7 @@ li{
     padding: 5px;
   }
   .menu-lateral .logo img{
-    width: 80%;
+    width: 75%;
   }
 
   .contenedor .contenido .titulos{
@@ -328,6 +328,7 @@ li{
     top: 0;
     left: 8.3vh;
     height: 8vh;
+    z-index: 1;
   }
 
   .contenedor .cabecera .menu .usuario{
@@ -337,6 +338,7 @@ li{
 
   .contenedor .contenido{
     margin-top: 8vh;
+    z-index: 0;
   }
 
   .contenedor .contenido .actividad-ventas{
@@ -359,5 +361,44 @@ li{
   }
   .contenedor .contenido .detalles-articulos  h1{
     font-size: 15px;
+  }
+
+  .contenedor .contenido .detalles-articulos .detalles-producto{
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .contenedor .contenido .detalles-articulos .detalles-producto .tabla{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  .contenedor .contenido .detalles-articulos .detalles-producto .tabla .filas{
+    width: 80px;
+    font-size: 10px;
+  }
+
+  .contenedor .contenido .detalles-articulos .orden-fecha{
+    width: 200px;
+    height: 100px;
+    font-size: 10px;
+    gap: 5PX;
+  }
+
+  .contenedor .contenido .detalles-articulos .orden-fecha .titulos-columnas {
+    gap: 10px;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .contenedor .contenido .detalles-articulos .articulo-ventas{
+    gap: 3px;
+  }
+
+  .contenedor .contenido .detalles-articulos .articulo-ventas .tarjeta{
+    width: 75px;
+    height: 10px;
+    font-size: 10px;
   }
 }

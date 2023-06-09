@@ -16,7 +16,7 @@
       <img src="../img/logo_sellwise.png" alt="Logo de la página">
     </div>
     <ul>
-      <li><a href="#">
+      <li><a href="dashboard.php">
         <i class="fa-solid fa-table-columns"></i>&nbsp;&nbsp;<span>Panel de control</span></a>
       </li>
       <li>
